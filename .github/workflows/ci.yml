@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Lint Sigma hunts
+        run: python tools/lint_sigma.py
+
+      - name: Validate sample JSON files
+        run: python tools/validate_samples.py
+
+      - name: Regenerate figures
+        run: python figures/generate_figures.py
+
+      - name: Ensure generated figures are up to date
+        run: git diff --name-only --exit-code
+

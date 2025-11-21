@@ -1,0 +1,354 @@
+[
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:14:22Z",
+    "EventID": 4688,
+    "Account": "FARM\\sp_app_pool",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -enc UwB0AGEAcgB0AC0AQQBTAFAAXwBVAHAAZABhAHQAZQAuAHAAcwA= ",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:16:47Z",
+    "EventID": 4688,
+    "Account": "FARM\\sp_app_pool",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -EncodedCommand UwB0AGUAYQBsAC0AVwBlAGIAcwBoAGUAbABsAC4AcABzADE=",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:20:03Z",
+    "EventID": 4688,
+    "Account": "FARM\\svc_spfarm",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -enc UwB1AHMAcABlAGMAdAAgAGUAeABmAGkAbAB0AHIAYQB0AGkAbwBuAA==",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T03:55:12Z",
+    "EventID": 4688,
+    "Account": "FARM\\svc_sharepointdeploy",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -EncodedCommand QwBoAGUAYwBrAGkAbgBnAC0ARgBvAHIAZQB0AGMAYQBsAGwAcwA=",
+    "IpAddress": "10.1.20.18",
+    "note": "benign deployment window"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T01:58:40Z",
+    "EventID": 4688,
+    "Account": "FARM\\sp_app_pool",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\cmd.exe",
+    "CommandLine": "cmd.exe /c whoami",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T04:05:30Z",
+    "EventID": 4688,
+    "Account": "FARM\\svc_backup",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "NewProcessName": "C:\\Windows\\System32\\tar.exe",
+    "CommandLine": "tar -cf backup.tar C:\\inetpub\\wwwroot",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:25:41Z",
+    "EventID": 4688,
+    "Account": "FARM\\sp_app_pool",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -enc UwB0AGEAcgB0AC0ASABhAHIAdgBlAHMAdABpAG4AZwAuAHAAcwA=",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:31:22Z",
+    "EventID": 4688,
+    "Account": "FARM\\sp_app_pool",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -enc UwBjAHIAaQBwAHQAIAB1AHAAZABhAHQAZQAuAGAA",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:50:09Z",
+    "EventID": 4688,
+    "Account": "FARM\\svc_search",
+    "Computer": "SP01.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\SearchIndexer.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -File C:\\ProgramData\\Search\\build.ps1",
+    "IpAddress": "10.1.20.15"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:37:50Z",
+    "EventID": 4688,
+    "Account": "FARM\\sp_app_pool",
+    "Computer": "SP02.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -EncodedCommand UwB0AGEAcgB0AC0AUABTAFMAIABTAHUAcABwAG8AcgB0",
+    "IpAddress": "10.1.20.21"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T02:44:38Z",
+    "EventID": 4688,
+    "Account": "FARM\\sp_app_pool",
+    "Computer": "SP02.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "\"powershell.exe\" -enc UwBhAG0AcABsAGUALQBkAGEAdABhAC4AcABzADE=",
+    "IpAddress": "10.1.20.21"
+  },
+  {
+    "event_type": "SecurityEvent",
+    "TimeGenerated": "2025-07-12T04:22:43Z",
+    "EventID": 4688,
+    "Account": "FARM\\svc_scheduler",
+    "Computer": "SP02.farm.local",
+    "ParentProcessName": "C:\\Windows\\System32\\TaskScheduler.exe",
+    "NewProcessName": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "powershell.exe -File C:\\Jobs\\DailyReport.ps1",
+    "IpAddress": "10.1.20.21"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T02:18:02Z",
+    "EventID": 11,
+    "Computer": "SP01.farm.local",
+    "Image": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "FileName": "default.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\_layouts\\default.aspx"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T02:21:15Z",
+    "EventID": 11,
+    "Computer": "SP01.farm.local",
+    "Image": "C:\\Windows\\System32\\cmd.exe",
+    "FileName": "global.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\_layouts\\15\\global.aspx"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T02:23:48Z",
+    "EventID": 11,
+    "Computer": "SP01.farm.local",
+    "Image": "C:\\Windows\\System32\\cmd.exe",
+    "FileName": "check.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\App_Data\\check.aspx"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T03:40:12Z",
+    "EventID": 11,
+    "Computer": "SP01.farm.local",
+    "Image": "C:\\Windows\\System32\\Robocopy.exe",
+    "FileName": "content.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\Layouts\\content.aspx",
+    "note": "benign deploy"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T02:33:01Z",
+    "EventID": 11,
+    "Computer": "SP02.farm.local",
+    "Image": "C:\\Windows\\System32\\inetsrv\\w3wp.exe",
+    "FileName": "shell.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\_layouts\\15\\shell.aspx"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T02:35:37Z",
+    "EventID": 11,
+    "Computer": "SP02.farm.local",
+    "Image": "C:\\Windows\\System32\\cmd.exe",
+    "FileName": "health.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\_layouts\\health.aspx"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T04:10:18Z",
+    "EventID": 11,
+    "Computer": "SP02.farm.local",
+    "Image": "C:\\Windows\\System32\\msdeploy.exe",
+    "FileName": "search.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\_layouts\\search.aspx",
+    "note": "scheduled deploy"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T02:38:09Z",
+    "EventID": 11,
+    "Computer": "SP02.farm.local",
+    "Image": "C:\\Windows\\System32\\cmd.exe",
+    "FileName": "loader.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\App_Data\\loader.aspx"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T02:41:20Z",
+    "EventID": 11,
+    "Computer": "SP02.farm.local",
+    "Image": "C:\\Windows\\System32\\cmd.exe",
+    "FileName": "svc.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\_layouts\\svc.aspx"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T04:01:44Z",
+    "EventID": 11,
+    "Computer": "SP01.farm.local",
+    "Image": "C:\\Windows\\System32\\Robocopy.exe",
+    "FileName": "deploy.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\Layouts\\deploy.aspx",
+    "note": "benign nightly deployment"
+  },
+  {
+    "event_type": "Sysmon",
+    "TimeGenerated": "2025-07-12T04:05:57Z",
+    "EventID": 11,
+    "Computer": "SP02.farm.local",
+    "Image": "C:\\Windows\\System32\\Robocopy.exe",
+    "FileName": "cleanup.aspx",
+    "FilePath": "C:\\inetpub\\wwwroot\\wss\\VirtualDirectories\\80\\Layouts\\cleanup.aspx",
+    "note": "benign nightly deployment"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:19:22Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "cdn-msupdate.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:19:53Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "cdn-msupdate.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:24:02Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "toolshare-sync.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:24:47Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "toolshare-sync.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:26:11Z",
+    "ClientIP": "10.1.20.21",
+    "Name": "cdn-msupdate.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:27:36Z",
+    "ClientIP": "10.1.20.21",
+    "Name": "toolshare-sync.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T04:10:05Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "updates.contoso.com",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T04:15:12Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "updates.contoso.com",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T04:20:15Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "updates.contoso.com",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T04:25:21Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "updates.contoso.com",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T04:30:26Z",
+    "ClientIP": "10.1.20.15",
+    "Name": "updates.contoso.com",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:33:59Z",
+    "ClientIP": "10.1.20.21",
+    "Name": "cdn-msupdate.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T02:35:44Z",
+    "ClientIP": "10.1.20.21",
+    "Name": "toolshare-sync.example",
+    "RecordType": "A"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T03:05:45Z",
+    "ClientIP": "10.1.20.18",
+    "Name": "devops.contoso.com",
+    "RecordType": "A",
+    "note": "benign automation"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T03:10:12Z",
+    "ClientIP": "10.1.20.18",
+    "Name": "devops.contoso.com",
+    "RecordType": "A",
+    "note": "benign automation"
+  },
+  {
+    "event_type": "DnsEvents",
+    "TimeGenerated": "2025-07-12T03:15:33Z",
+    "ClientIP": "10.1.20.18",
+    "Name": "devops.contoso.com",
+    "RecordType": "A",
+    "note": "benign automation"
+  }
+]
+

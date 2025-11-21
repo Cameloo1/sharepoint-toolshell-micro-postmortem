@@ -1,0 +1,8 @@
+SecurityEvent
+| where EventID == 4688
+| where ParentProcessName has "\\w3wp.exe"
+| where NewProcessName has "\\powershell.exe"
+| where CommandLine has_any ("-enc","-EncodedCommand")
+| project TimeCreated=TimeGenerated, Account, Computer, ParentProcessName, NewProcessName, CommandLine
+| order by TimeCreated desc
+

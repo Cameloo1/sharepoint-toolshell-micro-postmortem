@@ -1,0 +1,21 @@
+title: Unexpected ASPX Created In SharePoint Web Root
+id: 1b3f7f85-8fdb-40a6-b8f3-aspxc
+status: experimental
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  sel:
+    EventID: 11
+    TargetFilename|contains:
+      - '\inetpub\wwwroot\wss\'
+      - '\_layouts\'
+      - '\_layouts\15\'
+condition: sel
+level: high
+falsepositives:
+  - Legitimate deployments during known change windows
+tags:
+  - attack.persistence
+  - attack.t1505.003
+

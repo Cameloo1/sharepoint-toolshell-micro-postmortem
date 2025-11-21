@@ -1,0 +1,6 @@
+indicator_type,value,context,note
+domain,example-attacker[.]com,Low-prevalence outbound beacon observed post-ToolShell chain,Illustrative only
+ipv4,203.0.113.77,Synthetic C2 pivot used in sample data,Illustrative placeholder
+sha256,1111111111111111111111111111111111111111111111111111111111111111,Synthetic webshell hash for lab validation,Illustrative placeholder
+url,https://sharepoint-updates.example/download.aspx,Simulated lure delivering exploit chain,Illustrative only
+

@@ -1,0 +1,41 @@
+title: Newly Seen Domains After IIS Encoded PowerShell
+id: 8c2c0c77-e28d-4e5a-9a61-dnsnoop
+status: experimental
+type: sequence
+description: >
+  Detects DNS queries for newly observed domains shortly after IIS worker processes launch encoded
+  PowerShell, indicating possible follow-on command and control.
+sequence:
+  - id: encoded_powershell
+    logsource:
+      product: windows
+      service: security
+    detection:
+      selection_proc:
+        EventID: 4688
+        ParentProcessName|endswith: '\w3wp.exe'
+        NewProcessName|endswith: '\powershell.exe'
+        CommandLine|contains:
+          - '-enc'
+          - 'EncodedCommand'
+      condition: selection_proc
+  - id: low_prevalence_dns
+    logsource:
+      category: dns
+    detection:
+      selection_dns:
+        QueryName|endswith:
+          - '.'
+        RequestCount|lt: 5
+        FirstSeenRelativeMinutes|lte: 1440
+      condition: selection_dns
+    timeframe: 24h
+level: high
+falsepositives:
+  - Controlled SharePoint maintenance that stages encoded PowerShell and tests new distribution endpoints
+tags:
+  - attack.command_and_control
+  - attack.t1071
+  - attack.discovery
+references: []
+

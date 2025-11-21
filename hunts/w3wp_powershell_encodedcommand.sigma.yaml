@@ -1,0 +1,22 @@
+title: IIS Worker Spawns PowerShell EncodedCommand
+id: 5a0a2b9f-7e4f-41a7-9d5d-encps
+status: experimental
+logsource:
+  product: windows
+  service: security
+detection:
+  sel:
+    EventID: 4688
+    ParentProcessName|endswith: '\w3wp.exe'
+    NewProcessName|endswith: '\powershell.exe'
+    CommandLine|contains:
+      - '-enc'
+      - 'EncodedCommand'
+condition: sel
+level: high
+falsepositives:
+  - Legitimate admin automation scripts
+tags:
+  - attack.execution
+  - attack.t1059.001
+

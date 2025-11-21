@@ -1,0 +1,6 @@
+Sysmon
+| where EventID == 11
+| where FileName endswith ".aspx"
+| where FilePath has_any ("\\inetpub\\wwwroot\\wss\\", "\\_layouts\\", "\\_layouts\\15\\")
+| summarize Files=dcount(FilePath), any(FilePath) by Computer, bin(TimeGenerated, 1h)
+

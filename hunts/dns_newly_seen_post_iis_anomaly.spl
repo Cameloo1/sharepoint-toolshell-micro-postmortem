@@ -1,0 +1,10 @@
+index=dns earliest=-24h
+| stats earliest(_time) as firstSeen, count as dns_count by src_ip, query
+| where dns_count < 5
+| join type=inner src_ip
+    [ search index=wineventlog EventCode=4688 ParentProcessName="*\\w3wp.exe" New_Process_Name="*\\powershell.exe"
+      (CommandLine="*-enc*" OR CommandLine="*EncodedCommand*")
+    | stats values(CommandLine) as CommandLine values(user) as user by src_ip
+    ]
+| table firstSeen, query, src_ip, user, CommandLine
+

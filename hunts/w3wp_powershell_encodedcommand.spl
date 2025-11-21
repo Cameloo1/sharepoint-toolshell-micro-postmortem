@@ -1,0 +1,5 @@
+index=* sourcetype=WinEventLog:Security EventCode=4688
+| search ParentProcessName="*\\w3wp.exe" New_Process_Name="*\\powershell.exe"
+| search CommandLine="*-enc*" OR CommandLine="*EncodedCommand*"
+| table _time, user, host, ParentProcessName, New_Process_Name, CommandLine
+
