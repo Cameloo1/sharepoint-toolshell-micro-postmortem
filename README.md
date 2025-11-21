@@ -48,17 +48,18 @@ Techniques emphasized: T1190 (Exploit Public-Facing Application), T1059.001 (Pow
 - AppSec guardrails for SharePoint-adjacent apps: secret scanning for machine keys, CI checks for dangerous deserialization patterns, and web-root integrity monitoring during build pipelines.
 
 ## Sources (Non-quoted, general references)
-- Microsoft security guidance on SharePoint Server (on-prem scope clarifications)
-- NVD CVEs for mid-2025 SharePoint on-prem vulnerabilities
-- CISA mid-2025 SharePoint advisories/MALWAR
-- Vendor research: Unit 42, SentinelOne, Trend Micro incident reports
+- Microsoft security guidance (on-prem scope):
+https://www.microsoft.com/en-us/msrc/blog/2025/07/customer-guidance-for-sharepoint-vulnerability-cve-2025-53770
+- NVD CVE (mid-2025 SharePoint on-prem):
+https://nvd.nist.gov/vuln/detail/CVE-2025-53770
+- CISA advisory/MAR (mid-2025 SharePoint):
+https://www.cisa.gov/news-events/analysis-reports/ar25-218a
 
-## Next Actions (Human)
-- Replace “Sources” bullets with precise links (e.g., Microsoft, MSRC, NVD, CISA, trusted vendor write-ups).
-- Optionally substitute organization-safe telemetry or extend samples with local lab events.
-- Execute and tune these hunts in production SIEM/EDR, adding allowlists for automation, change windows, and trusted CDNs.
-- Capture lessons learned in internal runbooks and monitor SharePoint farm for recurring anomalies; keep PDF/social deliverables explicitly out of scope for this kit.
-- Consider building an AppSec guardrails demo repo and referencing it under “Future Work.”
+Vendor research:
+- Unit 42 — https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/
+- SentinelOne — https://www.sentinelone.com/blog/sharepoint-toolshell-zero-day-exploited-in-the-wild-targets-enterprise-servers/
+- Trend Micro — https://www.trendmicro.com/en_us/research.html
+ (search: “SharePoint ToolShell CVE-2025-53770”)
 
 ## After-Build Notes — How to Adapt to Live SIEM/EDR
 - Update index/table names (`index=*`, `SecurityEvent`, `Sysmon`) to match local data models (e.g., `m365:security`, `wineventlog`).
